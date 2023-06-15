@@ -1,4 +1,10 @@
-//Arrow Function
-let invitation = name => `Welcome ${name} to this event`
+let upperCase = function(str){
+    return str.toUpperCase();
+}
 
-console.log(invitation("darpan"));
+let lowerCase = function(str){
+    return str.toLowerCase();
+}
+
+console.log(upperCase("Darpan Patel"));
+console.log(lowerCase("Darpan Patel"));
