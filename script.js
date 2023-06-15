@@ -1,6 +1,4 @@
-let ageCalculator = function(birthyear,currentyear){
-    let age = currentyear-birthyear;
-    console.log(`your age is ${age}`);
-}
+//Arrow Function
+let invitation = name => `Welcome ${name} to this event`
 
-ageCalculator(1997,2023);
+console.log(invitation("darpan"));
