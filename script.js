@@ -1,5 +1,5 @@
-let invitaion = function(name="friends"){
-    console.log(`welcome ${name} on our office`);
+let invitaion = function(name="friends",time="night"){
+    console.log(`welcome ${name} on our office and time will be at ${time}`);
 }
-invitaion("Darpan");
+invitaion("Darpan","morning");
 invitaion()
