@@ -1,5 +1,6 @@
-let invitaion = function(name="friends",time="night"){
-    console.log(`welcome ${name} on our office and time will be at ${time}`);
+let ageCalculator = function(birthyear,currentyear){
+    let age = currentyear-birthyear;
+    console.log(`your age is ${age}`);
 }
-invitaion("Darpan","morning");
-invitaion()
+
+ageCalculator(1997,2023);
