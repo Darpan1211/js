@@ -1,15 +1,8 @@
-let car = {
-    color:"black",
-    model:"2023",
-    company:"Honda"
+//delete properties in object
+let obj = {
+    prop1 : "value1",
+    prop2 : "value2"
 }
-console.log(car["model"]);
 
-let properties = "color";
-console.log(car[properties]);
-
-//"Modify" The Object property
-
-car["color"] = "Grey";
-car.model = "2022";
-console.log(car.color);
+delete obj["prop1"]
+console.log(obj.prop1)
