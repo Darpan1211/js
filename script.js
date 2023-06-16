@@ -1,10 +1,7 @@
-let upperCase = function(str){
-    return str.toUpperCase();
+//setTimeout(function)
+
+function greeting(){
+    console.log("Welcome to our coder dost")
 }
 
-let lowerCase = function(str){
-    return str.toLowerCase();
-}
-
-console.log(upperCase("Darpan Patel"));
-console.log(lowerCase("Darpan Patel"));
+setTimeout(greeting, 5000);
