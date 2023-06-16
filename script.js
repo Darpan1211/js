@@ -1,8 +1,15 @@
-//delete properties in object
-let obj = {
-    prop1 : "value1",
-    prop2 : "value2"
-}
+// Method--> It is nothing but object property(key) holding 
+//Function as "Value"
 
-delete obj["prop1"]
-console.log(obj.prop1)
+let person = {
+    firstName: 'Darpan',
+    lastName: 'Patel',
+    City:'Surat',
+    birthyear: 1997,
+    Education: 'Computer Science',
+    getSummary: function(){
+        return `${this.firstName} brook lived in ${this.City}.He is ${this.Education} and his birthyear is ${this.birthyear}`;
+    }
+
+}
+console.log(person.getSummary());
