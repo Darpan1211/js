@@ -1,7 +1,9 @@
-//setTimeout(function)
-
-function greeting(){
-    console.log("Welcome to our coder dost")
+let car = {
+    color:"black",
+    model:"2023",
+    company:"Honda"
 }
+console.log(car["model"]);
 
-setInterval(greeting, 2000);
+let properties = "color";
+console.log(car[properties]);
