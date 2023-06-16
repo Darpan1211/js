@@ -1,12 +1,25 @@
-//object inside array
-
-let blocklist = [{userName:"darpan",reson:"Abusive content"},{userName:"Rahul",reson:"avoid content"}]; //
-
-console.log(blocklist);
-
-for(let i = 0; i < blocklist.length; i++){
-    console.log(blocklist[i].userName);
-
-
-    
+//Function
+"use strict"
+let mainPlane={
+    airline : "Fly India",
+    iatacode:"FI",
+    bookings:[],
+    book:function(flightNum,name){
+        console.log(`${name} Booking Flight on ${this.airline} with fight Number ${this.iatacode}${flightNum}`);
+        this.bookings.push({flightName:`${this.airline}`, name:name,flightNumber:flightNum});
+    }
 }
+
+mainPlane.book(553,"Darpan");
+console.log(mainPlane);
+
+let childplane = {
+    airline:"CHild Plain",
+    iatacode:"cp",
+    bookings:[],
+}
+
+let book = mainPlane.book;
+
+book.call(childplane,689,"key");
+
