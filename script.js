@@ -1,6 +1,6 @@
-//DOM => Document Object Model
+//Updateing And Chnaging Contant
 
-// Created by browser as html load into the browser
+let content = document.querySelector('.test');
+content.innerHTML ="my name is Darpan"
 
-let resultElement = document.querySelector('.test')
-console.log(resultElement);
+console.log(content.innerHTML);
