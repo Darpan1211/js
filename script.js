@@ -1,10 +1,6 @@
-function greet(){
-    console.log(`Hello ${this.firstName} ${this.lastName} on coder`);
-}
-let users={
-    firstName:"Drapan",
-    lastName:"Patel"
-}
+//DOM => Document Object Model
 
-let greets = greet.bind(users);
-greets()
+// Created by browser as html load into the browser
+
+let resultElement = document.querySelector('.test')
+console.log(resultElement);
