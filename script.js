@@ -1,10 +1,10 @@
-//Updateing attributes of the HTML
+///add stye in DOM
 
-let innovaters = document.querySelector("a");
-console.log(innovaters.getAttribute("href")); // read attribute value
+let heading = document.querySelector('h1');
 
-//set attributes
+heading.innerHTML ="Welcome to the codders"
+heading.style.color = 'red';
 
-innovaters.setAttribute("href", "https://www.thecompass.co.in/");
-console.log(innovaters.getAttribute("href")); // read attribute value
-innovaters.innerText="Thecompass.co.in"
+let changes = function(){
+    heading.style.color = 'yellow';
+}
