@@ -1,10 +1,13 @@
-///add stye in DOM
-
+//Add, Remove and Replace Class of element
 let heading = document.querySelector('h1');
 
-heading.innerHTML ="Welcome to the codders"
-heading.style.color = 'red';
+//Add the class
+heading.classList.add('newClass');
 
-let changes = function(){
-    heading.style.color = 'yellow';
-}
+//Remove the class
+
+heading.classList.remove('newClass');
+
+//Replace the Class
+
+heading.classList.replace('main','newClass');
