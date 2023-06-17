@@ -1,6 +1,9 @@
-//Updateing And Chnaging Contant
+//Updateing attributes of the HTML
 
-let content = document.querySelector('.test');
-content.innerHTML ="my name is Darpan"
+let innovaters = document.querySelector("a");
+console.log(innovaters.getAttribute("href")); // read attribute value
 
-console.log(content.innerHTML);
+//set attributes
+
+innovaters.setAttribute("href", "thecompass.co.in");
+console.log(innovaters.getAttribute("href")); // read attribute value
