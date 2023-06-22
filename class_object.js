@@ -17,9 +17,11 @@ class Car{
     }
 }
 
-let honda = new Car("red", "green");
-console.log(honda)
+//static method (can never inhritated to all objects)
+Car.breakMethod = function(){
+    console.log("This is brack method of Car class")
+}
+
+let honda = new Car("red", 2023);
 honda.startEngin();
-honda.changeColor= "Yellow";
-honda._startEngine;
-console.log(honda);
+Car.breakMethod();
