@@ -1,15 +1,24 @@
-//add 5 student deatils 
-class Student{
-    constructor(name,city,age) {
-        this.name = name;
-        this.city = city;
-        this.age = age;
+//Chaining Method with Bacnk Account Project
 
+class bankAccount{
+    constructor(owner,pin){
+        this.owner = owner;
+        this.pin = pin;
+        this.movements=[];
     }
-    get description(){
-        return `Student ${this.name} has live in ${this.city} and his age is ${this.age}`
+    movements(){
+        return this.movements;
+    }
+    deposit(val){
+        this.movements.push(val);
+    }
+    windrawal(val){
+        this.movements.push(-val);
     }
 }
-let student1 = new Student("darpan","Surat","23");
-let student2 = new Student("Eshan","Surat","19");
-console.log(student1.description);
+//create user
+let account = new bankAccount("Darpan",1234);
+account.deposit(1000)
+account.windrawal(500)
+console.log(account.movements);
+console.log(account);
