@@ -12,9 +12,16 @@ class Car{
 
 //child class
 class Bike extends Car{
-    
+    //Add some new peoperties and Method as well
+    constructor(color,model,engin){
+        super(color,model);
+        this.engin = engin;
+    }
+        bikeMethod(){
+            console.log("This is bike strat engin method ");
+        }
 }
-let newBike = new Bike("Black",2023)
+let newBike = new Bike("Black",2023,"250cc")
 console.log(newBike);
 
 let honda = new Car("red", 2023);
