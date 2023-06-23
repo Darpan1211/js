@@ -8,7 +8,7 @@ class Car{
     startEngin(){
         console.log("This is strat engin method of Car class");
     }
-    get _startEngine(){
+    get startEngine(){
         console.log("This is strat engin method of Car class using get");
     }
 
@@ -23,5 +23,7 @@ Car.breakMethod = function(){
 }
 
 let honda = new Car("red", 2023);
-honda.startEngin();
+honda.startEngine;
+honda.changeColor = "yellow";
+console.log(honda);
 Car.breakMethod();

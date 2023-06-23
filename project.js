@@ -13,7 +13,10 @@ class bankAccount{
         this.movements.push(val);
     }
     windrawal(val){
-        this.movements.push(-val);
+        this.deposit(-val);
+    }
+    get discription(){
+        console.log(`student name is :$(this.owner} pin number is :$(this.pin)`)
     }
 }
 //create user
@@ -22,3 +25,4 @@ account.deposit(1000)
 account.windrawal(500)
 console.log(account.movements);
 console.log(account);
+console.log(account.discription);
